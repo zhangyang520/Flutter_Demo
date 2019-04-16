@@ -71,6 +71,14 @@ class columnViewState extends State<columnViewPage>{
        ),
     );
 
+    //设置 title 的点击事件
+    var titleGestureDetector=GestureDetector(
+      child:titleSection ,
+      onTap: (){
+          Navigator.of(context).pushNamed("findPage");
+      },
+    );
+
     /**
      * 按钮的布局
      */
@@ -127,7 +135,7 @@ class columnViewState extends State<columnViewPage>{
     ListView listView=new ListView(
        children: <Widget>[
          gestureDetector,
-         titleSection,
+         titleGestureDetector,
          buttonSection,
          textGestureDetector
        ],

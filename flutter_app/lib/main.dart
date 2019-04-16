@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'grid/gridview.dart';
 import 'web/column.dart';
 import 'web/row.dart';
+import 'grid/FindPage.dart';
 
 void main() => runApp(MyApp());
 
@@ -57,7 +58,8 @@ class MyApp extends StatelessWidget {
       ),
       routes: <String,WidgetBuilder>{
         "gridView":(BuildContext context)=>GridViewPage(),
-        'rowViewPage':(BuildContext context)=> rowViewPage()
+        'rowViewPage':(BuildContext context)=> rowViewPage(),
+        'findPage':(BuildContext context)=> FindPage(),
       },
     );
   }
